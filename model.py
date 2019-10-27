@@ -29,8 +29,7 @@ class SegmentModel:
     @staticmethod
     def get_swish():
         def swish(x):
-            return K.tf.nn.swish(x)
-
+            return tf.nn.swish(x)
         return swish
 
     @staticmethod
