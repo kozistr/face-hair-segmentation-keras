@@ -79,5 +79,5 @@ class SegmentModel:
 
     def get_mask(self, img: np.ndarray, get_hair: bool = True):
         x = self.inference(img)
-        x = self.pred_to_mask(x, use_hair=get_hair)
+        x = self.pred_to_mask(x, use_hair_segment=get_hair)
         return x
